@@ -36,6 +36,11 @@ To use this theme, you need to enable external CSS loading in Firefox.
 4.  Download the `userChrome.css` file from this repo and place it inside the `chrome` folder.
 5.  **Restart Firefox.**
 
+## ⚙️ Extra Settings (Optional)
+
+* **Hardware Acceleration:** To ensure animations run smoothly, make sure hardware acceleration is forced in `about:config` (set `layers.acceleration.force-enabled` to `true`).
+* **Firefox Color:** This CSS works great on its own, but you can use the official Firefox Color extension to tweak other theme details if you want to fully match your setup.
+
 ---
 
 ## ⚖️ Legal & License
