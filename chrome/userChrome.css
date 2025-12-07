@@ -1,0 +1,88 @@
+/* =========================================================
+   MASTER CSS - SETUP DO LUCAS (VERSÃO HÍBRIDA)
+   Visual Geral: Controlado pela extensão "Firefox Color"
+   Barra de URL: Rosa Customizado
+   Funcionalidades: Centralizar, Autohide, etc.
+   ========================================================= */
+
+/* --- 1. VARIÁVEIS DE COR --- */
+:root{
+    --tenshi-pink: #fcbccd; /* Rosa do fundo da barra */
+    --tenshi-dark: #f16084; /* Rosa mais escuro (opcional) */
+}
+
+/* =========================================================
+   BARRA DE URL FINAL (FUNDO DARK + TEXTO ROSA)
+   ========================================================= */
+
+:root, #navigator-toolbox {
+    /* FUNDO ESCOLA: Um roxo escuro para combinar com o tema */
+    --toolbar-field-background-color: #1e1e2e !important;
+    --toolbar-field-focus-background-color: #1e1e2e !important;
+    
+    /* TEXTO ROSA: A cor da Tenshi brilhando */
+    --toolbar-field-color: #fcbccd !important;
+    --toolbar-field-focus-color: #fcbccd !important;
+    
+    /* BORDA ROSA */
+    --toolbar-field-border-color: #fcbccd !important;
+}
+
+/* Garante o fundo escuro */
+#urlbar-background {
+    background-color: var(--toolbar-field-background-color) !important;
+}
+
+/* Pinta os ícones (cadeado, lupa, etc) de ROSA também para combinar */
+#urlbar-input-container {
+    --urlbar-icon-fill-opacity: 1 !important;
+}
+.urlbar-icon, #urlbar-search-button, #tracking-protection-icon-container, #identity-box {
+    fill: #fcbccd !important;
+    color: #fcbccd !important;
+}
+
+/* Remove a sombra branca padrão ao focar, para ficar 100% dark */
+#urlbar[focused="true"] > #urlbar-background {
+    box-shadow: none !important;
+}
+
+/* --- 3. CÓDIGOS FUNCIONAIS (MANTER O QUE JÁ ESTAVA BOM) --- */
+
+/* Centralizar texto das abas */
+.tab-label {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+/* Barra de favoritos automática (Aparece só no mouse) */
+#PersonalToolbar {
+    --uc-bm-height: 20px;
+    --uc-bm-padding: 4px;
+    margin-top: calc(0px - var(--uc-bm-height) - 2 * var(--uc-bm-padding)) !important;
+    transition: margin-top 0.2s ease-in-out !important;
+    opacity: 0 !important;
+    position: relative;
+    z-index: 1;
+}
+#nav-bar:hover + #PersonalToolbar, #PersonalToolbar:hover {
+    margin-top: 0px !important;
+    opacity: 1 !important;
+}
+
+/* Esconde o 'X' nas abas inativas */
+.tabbrowser-tab:not([selected]):not(:hover) .tab-close-button {
+    display: none !important;
+}
+
+/* --- 4. TOQUE GAMER (BRILHO NA ABA QUE TOCA SOM) --- */
+.tabbrowser-tab[soundplaying="true"][selected="true"] .tab-background {
+    /* Usa o mesmo rosa da barra para combinar */
+    box-shadow: 0 0 12px var(--tenshi-pink) !important;
+    border-color: var(--tenshi-pink) !important;
+}
+.tab-secondary-label {
+    display: none !important;
+}
