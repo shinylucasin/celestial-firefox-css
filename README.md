@@ -6,6 +6,12 @@ A minimalist CSS "rice" for Firefox, focused on a dark theme with neon pink acce
 
 The goal is to clean up the interface, center elements, and give a "gamer/hacker" touch to the address bar without sacrificing performance.
 
+## 🎨 Screenshots
+
+![Tela Inicial](screenshots/firefox.png)
+
+![Barra de Endereços](screenshots/barra_pesquisa.png)
+
 ## ✨ Features
 
 * **Custom Address Bar:** "Dark mode" background (deep purple) with vibrant neon pink text and icons.
