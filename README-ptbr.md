@@ -9,10 +9,8 @@ O objetivo é limpar a interface, centralizar elementos e dar um toque "gamer/ha
 ## 🎨 Screenshots
 
 ![Tela Inicial](screenshots/firefox.png)
-*(Substitua pelo print da sua home com o wallpaper)*
 
 ![Barra de Endereços](screenshots/barra_pesquisa.png)
-*(Substitua por um print da barra rosa em ação)*
 
 ## ✨ Funcionalidades
 
