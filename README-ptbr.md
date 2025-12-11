@@ -67,5 +67,5 @@ O software é fornecido "como está", sem garantia de qualquer tipo.
 </details>
 
 <p align="center">
-  <i>Criado com ❤️ e CSS por <a href="https://github.com/SeuUsuario">SeuUsuario</a></i>
+  <i>Criado com ❤️ e CSS por <a href="https://github.com/shinylucasin">shinylucasin</a></i>
 </p>
